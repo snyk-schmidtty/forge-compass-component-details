@@ -1,0 +1,20 @@
+modules:
+  compass:componentPage:
+    - key: hello-world-component-page
+      function: component
+      title: Hello world
+  compass:adminPage:
+    - key: hello-world-admin-page
+      function: admin
+      title: Hello world
+  function:
+    - key: component
+      handler: component-page.run
+    - key: admin
+      handler: admin-page.run
+permissions:
+  scopes:
+    - read:component:compass
+    - write:component:compass
+app:
+  id: ari:cloud:ecosystem::app/553e070c-9358-4ee5-bf0b-137c23122e76
