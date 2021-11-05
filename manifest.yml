@@ -16,5 +16,3 @@ permissions:
   scopes:
     - read:component:compass
     - write:component:compass
-app:
-  id: ari:cloud:ecosystem::app/553e070c-9358-4ee5-bf0b-137c23122e76

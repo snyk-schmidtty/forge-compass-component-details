@@ -1,5 +1,5 @@
 import ForgeUI, { render, Fragment, Text, Table, Head, Cell, Row, useProductContext, useEffect, useState } from '@forge/ui';
-import api from '@atlassian/forge-graphql';
+import graphqlGateway from '@atlassian/forge-graphql';
 
 const App = () => {
 
@@ -8,7 +8,7 @@ const App = () => {
   const [errors, setErrors] = useState(null);
 
   useEffect(async () => {
-    const { errors, data } = await api.compass.asApp().getComponent({
+    const { errors, data } = await graphqlGateway.compass.asApp().getComponent({
       componentId: JSON.parse(context.extensionContext).componentId,
     });
     setComponent(data.component);
