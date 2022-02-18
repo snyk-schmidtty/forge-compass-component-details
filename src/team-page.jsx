@@ -1,16 +1,20 @@
-import { render, Fragment, Text, useProductContext } from '@forge/ui';
+import ForgeUI, {
+  render,
+  Fragment,
+  Text,
+  useProductContext,
+} from '@forge/ui';
 
 const App = () => {
   const context = useProductContext();
-
   const teamId = JSON.parse(context.extensionContext).teamId;
 
   return (
-      <Fragment>
-        <Text>
-          This is an awesome team with ID {teamId}
-        </Text>
-      </Fragment>
+    <Fragment>
+      <Text>
+        This is an awesome team with ID {teamId}
+      </Text>
+    </Fragment>
   );
 };
 
