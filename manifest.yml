@@ -1,24 +1,18 @@
 modules:
-  compass:componentPage:
-    - key: hello-world-component-page
-      function: component
-      title: Hello world
   compass:adminPage:
     - key: hello-world-admin-page
       function: admin
       title: Hello world
-  compass:teamPage:
-    - key: hello-world-team-page
-      function: team
-      title: Hello world
   function:
-    - key: component
-      handler: component-page.run
-    - key: team
-      handler: team-page.run
     - key: admin
       handler: admin-page.run
 permissions:
   scopes:
     - read:component:compass
     - write:component:compass
+  external:
+    fetch:
+      backend:
+        - 'app.launchdarkly.com'
+app:
+  id: ari:cloud:ecosystem::app/2b413234-23f8-49cb-8cd0-00f00f853edf
