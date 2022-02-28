@@ -7,12 +7,11 @@ import ForgeUI, {
 
 const App = () => {
   const context = useProductContext();
-  const teamId = JSON.parse(context.extensionContext).teamId;
 
   return (
     <Fragment>
       <Text>
-        This is an awesome team with ID {teamId}
+        This is an awesome team with ID {context.extensionContext.teamId}
       </Text>
     </Fragment>
   );
