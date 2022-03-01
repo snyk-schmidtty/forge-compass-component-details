@@ -9,7 +9,7 @@ const App = () => {
 
   useEffect(async () => {
     const { errors, data } = await graphqlGateway.compass.asApp().getComponent({
-      componentId: JSON.parse(context.extensionContext).componentId,
+      componentId: context.extensionContext.componentId,
     });
     setComponent(data.component);
     setErrors(errors);
@@ -46,7 +46,7 @@ const App = () => {
           </Cell>
         </Row>)) }
     </Table>
-    );  
+    );
   }
 
 };
