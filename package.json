@@ -1,6 +1,6 @@
 {
- "dependencies": {
-  "@atlassian/forge-graphql": "^5.6.4",
-  "@forge/ui": "^1.0.0"
- }
+  "dependencies": {
+    "@atlassian/forge-graphql": "^5.6.4",
+    "@forge/ui": "^1.0.0"
+  }
 }

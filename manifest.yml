@@ -7,9 +7,15 @@ modules:
     - key: hello-world-admin-page
       function: admin
       title: Hello world
+  compass:teamPage:
+    - key: hello-world-team-page
+      function: team
+      title: Hello world
   function:
     - key: component
       handler: component-page.run
+    - key: team
+      handler: team-page.run
     - key: admin
       handler: admin-page.run
 permissions:
