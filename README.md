@@ -2,7 +2,7 @@
 
 This project demonstrates the [compass:componentPage](https://developer.atlassian.com/platform/forge/manifest-reference/modules/compass-component-page/), [compass:adminPage](https://developer.atlassian.com/platform/forge/manifest-reference/modules/compass-admin-page/), and [compass:teamPage](https://developer.atlassian.com/platform/forge/manifest-reference/modules/compass-team-page/) modules for [Forge](https://developer.atlassian.com/platform/forge/). It contains a Forge app written in Javascript that creates a new subtab called `Hello world` on the Compass component details and team details pages, then uses [UI Kit](https://developer.atlassian.com/platform/forge/ui-kit/) to display `Hello world!` on the subtabs. It also displays a table that contains data of the Compass component retreived using the [GraphQL API Toolkit](https://developer.atlassian.com/cloud/compass/integrations/graphql-api-toolkit/).
 
-Compass is currently in Alpha. Visit [go.atlassian.com/get-compass](https://go.atlassian.com/get-compass) to get started.
+Compass is currently in Beta. Visit [go.atlassian.com/get-compass](https://go.atlassian.com/get-compass) to get started.
 
 See [developer.atlassian.com/platform/forge/](https://developer.atlassian.com/platform/forge) for documentation and tutorials explaining Forge.
 
